@@ -120,7 +120,7 @@ void print_nor(p_node ptr) {
 
     for (int i = 0; i < ARRAY_SIZE; i++) {
         if (ptr->end_of_word > 0) {
-            printf("%s %d \n", ptr->word, ptr->end_of_word);
+            printf("%s %d\n", ptr->word, ptr->end_of_word);
             ptr->end_of_word = 0;}
 
         if (ptr->connected_nodes[i] != NULL) {
@@ -133,7 +133,7 @@ void print_r(p_node ptr) {
 
     for (int i = ARRAY_SIZE-1; i >= 0; i--) {
         if (ptr->end_of_word > 0) {
-            printf("%s %d \n", ptr->word, ptr->end_of_word);
+            printf("%s %d\n", ptr->word, ptr->end_of_word);
             ptr->end_of_word = 0;}
 
         if (ptr->connected_nodes[i] != NULL) {
